@@ -110,7 +110,7 @@ body.noche .btn-secundario {
 }
 
 .padding-especial {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .navbar {
@@ -400,23 +400,19 @@ body.noche .card-civil-engineer a {
 #portfolio .bg-rosa,
 #civil-engineer .bg-rosa {
   background-color: rgba(var(--color-terciario), 0.15);
-  height: 300px;
 }
 
 #civil-engineer .bg-rosa {
   background-color: rgba(var(--color-terciario), 0.15);
-  height: 200px;
 }
 
 #portfolio .bg-salmon,
 #civil-engineer .bg-salmon {
   background-color: rgba(242, 153, 74, 0.15);
-  height: 300px;
 }
 
 #civil-engineer .bg-salmon {
   background-color: rgba(242, 153, 74, 0.15);
-  height: 250px;
 }
 
 #portfolio .card-proyectos {
