@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Appolon Orlando::</title>
+    <link
+      class="favicon"
+      rel="shortcut icon"
+      href="Imagenes/Orlando.ico"
+      type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="noche">
+    <!-- Barra De Navegacion -->
+    <nav class="navbar sticky-top navbar-expand-md py-md-4">
+      <div class="container-xl">
+        <a class="navbar-brand d-md-none" href="index.html">
+          <img src="imagenes/logo/logo-light.png" height="45" alt="" />
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button">
+          <i class="fa-solid fa-burger"></i>
+        </button>
+        <div id="overlay"></div>
+        <div class="collapse navbar-collapse menu-collapse" id="navbarNav">
+          <div id="cerrar-menu" class="d-md-none">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-3">
+              <a class="nav-link active px-0" aria-current="page" href="#home"
+                ><i class="fa-solid fa-house d-md-none"></i>Home</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-0" href="#skills"
+                ><i class="fa-solid fa-brain d-md-none"></i>Skills</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-0" href="#about"
+                ><i class="fa-solid fa-user d-md-none"></i>About</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-0" href="#portfolio"
+                ><i class="fa-solid fa-suitcase d-md-none"></i>Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-0" href="#contact"
+                ><i class="fa-regular fa-id-badge d-md-none"></i>Contact</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a
+                id="btn-mode"
+                onclick="changeMode()"
+                class="nav-link px-0"
+                role="button">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Home -->
+    <section id="home">
+      <div class="container-xl">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <img
+              id="home-img"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              src="imagenes/Orlando.jpg"
+              alt="Foto Del Ingeniero Sonriendo." />
+          </div>
+          <div
+            id="home-desc-wrapper"
+            class="col-lg-6 px-4 px-lg-0 py-lg-4 d-flex flex-column justify-content-center min-vh-100">
+            <div id="home-descripcion" class="p-4 p-md-5">
+              <h1
+                class="titulo-principal"
+                data-aos="fade-left"
+                data-aos-duration="2000">
+                Hello, I'm Orlando <span class="accent">Appolon</span>
+              </h1>
+              <p class="fs-5" data-aos="fade-left" data-aos-duration="2500">
+                I’m an experienced civil engineer. In the years, I’ve cultivated
+                my passion for coding by studying the IT field for instance
+                software development and I’m skilled in HTML, JavaScript, and
+                React. I’m now looking for a junior dev position to finally kick
+                start my career and learn among professionals.
+              </p>
+              <div class="d-flex flex-column flex-md-row gap-3">
+                <a
+                  class="btn-principal"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  href="Orlando_Appolon_CV.pdf"
+                  download
+                  >Curriculum Vitae</a
+                >
+                <a
+                  class="btn-secundario"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  href="#contact"
+                  >Contact Me</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Skills -->
+    <section id="skills" class="padding-especial">
+      <div class="container-xl">
+        <div class="row gy-4">
+          <div class="col-sm-6 col-lg-4">
+            <div class="p-4 card-skills text-center">
+              <div class="mb-3">
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  src="imagenes/iconos/cerebro.png"
+                  height="90"
+                  alt="Icono Creatividad" />
+              </div>
+              <h5
+                class="subtitulo"
+                data-aos="fade-left"
+                data-aos-duration="2500">
+                Creativity
+              </h5>
+              <p class="mb-0" data-aos="fade-left" data-aos-duration="3000">
+                Ability to generate innovative ideas, think originally, and find
+                unique solutions to problems. Seeking personal expression and
+                exploration of new possibilities in different aspects of life.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="p-4 card-skills active text-center">
+              <div class="mb-3">
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  src="imagenes/iconos/inteligencia-artificial.png"
+                  height="90"
+                  alt="Icono Creatividad" />
+              </div>
+              <h5
+                class="subtitulo"
+                data-aos="fade-left"
+                data-aos-duration="2500">
+                Problem-solving
+              </h5>
+              <p class="mb-0" data-aos="fade-left" data-aos-duration="3000">
+                Ability to analyze complex situations, identify root causes, and
+                find effective solutions. He combines logical thinking with
+                creativity and resourcefulness, demonstrating resilience and
+                perseverance in the face of challenges.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="p-4 card-skills text-center">
+              <div class="mb-3">
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  src="imagenes/iconos/adaptacion.png"
+                  height="90"
+                  alt="Icono Creatividad" />
+              </div>
+              <h5
+                class="subtitulo"
+                data-aos="fade-left"
+                data-aos-duration="2500">
+                Self-taught
+              </h5>
+              <p class="mb-0" data-aos="fade-left" data-aos-duration="3000">
+                Ability to learn independently, acquiring knowledge and skills
+                on my own. proactive, looking for learning opportunities and I
+                strive to reach a level of mastery in the subjects that interest
+                me.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección About -->
+    <section id="about" class="padding-especial">
+      <div class="container-xl">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-7 mx-auto d-flex align-items-center">
+            <div class="position-relative">
+              <h5 class="marca-agua">ABOUT</h5>
+              <p class="mb-4" data-aos="fade-left" data-aos-duration="1500">
+                My journey as a civil engineer has taught me the importance of
+                precision, problem-solving, and attention to detail. These
+                qualities seamlessly transition into my work as a developer,
+                allowing me to approach coding challenges with a meticulous and
+                analytical mindset. I am constantly seeking opportunities to
+                expand my knowledge and explore innovative solutions.
+              </p>
+              <p class="mb-4" data-aos="fade-left" data-aos-duration="2000">
+                Now, I am eagerly looking for a junior developer position to
+                kick-start my career in the technology industry. I am driven to
+                learn and grow alongside seasoned professionals, contributing my
+                unique blend of engineering expertise and coding skills to
+                create impactful projects.
+              </p>
+              <p data-aos="fade-left" data-aos-duration="3000">
+                This portfolio serves as a platform for me to showcase my
+                skills, experiences, and projects. I invite you to explore and
+                learn more about me and my journey. If you're interested in
+                collaborating, discussing opportunities
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div id="imagen-about" data-aos="fade-up" data-aos-duration="3000">
+              <img src="imagenes/about_Orlando.JPG" alt="foto about" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Portfolio -->
+    <section id="portfolio" class="padding-especial">
+      <div class="container-xl">
+        <h1
+          class="titulo-principal"
+          data-aos="fade-left"
+          data-aos-duration="3000">
+          Front-end <span class="accent">Developer</span> Jr.
+        </h1>
+        <div class="row gy-4 my-5">
+          <div class="col-sm-6 col-lg-3">
+            <div class="mb-3 card-portfolio bg-rosa p-4">
+              <h5 class="subtitulo" data-aos="fade-up" data-aos-duration="2000">
+                HTML5
+              </h5>
+              <p class="mb-0" data-aos="fade-up" data-aos-duration="3000">
+                Using HTML5 and related technologies to create and enhance the
+                appearance, functionality, and interactivity of websites and web
+                applications.
+              </p>
+            </div>
+            <div class="bg-salmon card-portfolio p-4">
+              <h5 class="subtitulo" data-aos="fade-up" data-aos-duration="2000">
+                JavaScript (ES6)
+              </h5>
+              <p class="mb-0" data-aos="fade-up" data-aos-duration="3000">
+                Extending the capabilities of the language and provides a more
+                modern and concise syntax for writing JavaScript code.The
+                development of more robust, readable, and maintainable web
+                applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 order-lg-1 order-md-0">
+            <div class="mb-3 card-portfolio bg-rosa p-4">
+              <h5 class="subtitulo" data-aos="fade-up" data-aos-duration="2000">
+                Bootstrap
+              </h5>
+              <p class="mb-0" data-aos="fade-up" data-aos-duration="3000">
+                simplifying the development of websites and web applications by
+                providing a set of pre-defined tools and components that
+                streamline the process and ensure a responsive and modern
+                design.
+              </p>
+            </div>
+            <div class="bg-salmon card-portfolio p-4">
+              <h5 class="subtitulo" data-aos="fade-up" data-aos-duration="2000">
+                ReactJS
+              </h5>
+              <p class="mb-0" data-aos="fade-up" data-aos-duration="3000">
+                JavaScript library that enables building interactive and
+                reactive user interfaces by using reusable components and an
+                efficient approach to UI updates.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 order-lg-0 order-md-1">
+            <div class="card-portfolio p-4 h-100">
+              <div class="position-relative z-1">
+                <h5
+                  class="subtitulo"
+                  data-aos="fade-up"
+                  data-aos-duration="2000">
+                  Responsive design
+                </h5>
+                <div class="mb-4">
+                  <p class="mb-4" data-aos="fade-up" data-aos-duration="3000">
+                    Creating and modifying static web pages following HTML5
+                    specifications.
+                  </p>
+                  <p class="mb-4" data-aos="fade-up" data-aos-duration="3000">
+                    Creating and deploying interactive and mobile-friendly
+                    applications using HTML, CSS and JavaScript.
+                  </p>
+                  <p data-aos="fade-up" data-aos-duration="3000">
+                    Creating responsive design that automatically adapts and
+                    adjusts to different devices and screen sizes. It uses a
+                    flexible layout, intuitive navigation, and cares about image
+                    optimization and loading times. The main goal is to provide
+                    an optimal and consistent user experience on any device.
+                  </p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <a
+                    class="border-bottom"
+                    href="mailto:orlandoappolon1@gmail.com?Subject=Interesado a mi perfil favor de contactarme."
+                    >orlandoappolon1@gmail.com</a
+                  >
+                  <div class="d-flex gap-3 mt-1">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/orlando-appolon-863799151">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/orlando.apollon.7?mibextid=LQQJ4d">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://instagram.com/dorckyjjda?igshid=OGQ5ZDc2ODk2ZA==">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://wa.me/522381733282?">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <svg
+                width="414"
+                height="296"
+                viewBox="0 0 414 296"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M96.5216 147.503C90.4544 112.542 145.915 100.742 163.08 69.6868C180.293 38.5446 162.722 -10.8287 193.705 -28.3254C225.328 -46.1829 265.411 -24.9923 295.958 -5.35123C324.417 12.9475 345.075 41.0729 352.851 74.0021C360.273 105.436 352.091 137.532 336.357 165.738C320.673 193.856 298.726 221.57 267.118 227.696C237.014 233.531 212.597 208.152 184.846 195.106C153.38 180.315 102.466 181.76 96.5216 147.503Z"
+                  fill="#EDF7FA"
+                  fill-opacity="0.05" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M50.2274 145.594C42.6378 101.859 112.016 87.0987 133.488 48.2504C155.021 9.29362 133.04 -52.469 171.798 -74.3562C211.356 -96.6948 261.498 -70.1868 299.71 -45.6173C335.31 -22.7268 361.152 12.4561 370.879 53.6482C380.164 92.9701 369.929 133.12 350.247 168.404C330.626 203.578 303.173 238.245 263.633 245.909C225.975 253.209 195.43 221.46 160.715 205.142C121.354 186.639 57.6641 188.446 50.2274 145.594Z"
+                  fill="#EDF7FA"
+                  fill-opacity="0.05" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4">
+          <h5 class="subtitulo fw-bold mb-4">Projects</h5>
+          <div class="row gy-5">
+            <div class="col-sm-6 col-lg-4">
+              <div class="card-proyectos">
+                <div>
+                  <img
+                    class="w-100 object-fit-cover"
+                    height="300"
+                    src="imagenes/proyecto/pinterest-titulo.png"
+                    alt="Foto de un proyecto de SPA" />
+                </div>
+                <div class="back p-4">
+                  <h5 class="subtitulo">Pinterest Cloning</h5>
+                  <p>
+                    Website that replicates the functionality and features of
+                    Pinterest. Like Pinterest, it allows users to discover and
+                    save visual content such as images on different topics or
+                    themes.
+                  </p>
+                  <a
+                    class="d-inline-flex align-items-center gap-2"
+                    href="https://dorcky91.github.io/clon-de-pinterest/"
+                    target="_blank"
+                    >Ver más<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card-proyectos">
+                <div>
+                  <img
+                    class="w-100 object-fit-cover"
+                    height="300"
+                    src="imagenes/proyecto/spa-fl-gaby.png"
+                    alt="Foto de un proyecto de SPA" />
+                </div>
+                <div class="back p-4">
+                  <h5 class="subtitulo">SPA Massage therapy Anette FL</h5>
+                  <p>
+                    Spa website, an online platform that showcases and promotes
+                    a spa's services, facilities, and offerings. It serves as a
+                    virtual representation of the spa and allows prospective
+                    clients to learn more about the spa, its treatments, and to
+                    make appointments.
+                  </p>
+                  <a
+                    class="d-inline-flex align-items-center gap-2"
+                    href="https://dorcky91.github.io/masoterapiagabyfl/"
+                    target="_blank"
+                    >Ver más<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card-proyectos">
+                <div>
+                  <img
+                    class="w-100 object-fit-cover"
+                    height="300"
+                    src="imagenes/proyecto/atm.png"
+                    alt="Foto de un proyecto de SPA" />
+                </div>
+                <div class="back p-4">
+                  <h5 class="subtitulo">Project Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta quos est incidunt tempora minima ipsa! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Soluta quos est
+                    incidunt tempora minima ipsa!
+                  </p>
+                  <a
+                    class="d-inline-flex align-items-center gap-2"
+                    href="https://dorcky91.github.io/Proyecto-Cajero-Automatico/"
+                    target="_blank"
+                    >Ver más<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card-proyectos">
+                <div>
+                  <img
+                    class="w-100 object-fit-cover"
+                    height="300"
+                    src="imagenes/proyecto/pokedex.png"
+                    alt="Foto de un proyecto de SPA" />
+                </div>
+                <div class="back p-4">
+                  <h5 class="subtitulo">Pokédex Lordan</h5>
+                  <p>
+                    A website that includes an organized and searchable database
+                    of Pokémon species. Each Pokemon entry provides details such
+                    as its name, types, height, weight, and abilities. Users can
+                    access detailed information about each Pokémon.
+                  </p>
+                  <a
+                    class="d-inline-flex align-items-center gap-2"
+                    href="https://dorcky91.github.io/Pokedex-Lordan/"
+                    target="_blank"
+                    >Ver más<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card-proyectos">
+                <div>
+                  <img
+                    class="w-100 object-fit-cover"
+                    height="300"
+                    src="imagenes/proyecto/spa.jpeg"
+                    alt="Foto de un proyecto de SPA" />
+                </div>
+                <div class="back p-4">
+                  <h5 class="subtitulo">Project Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta quos est incidunt tempora minima ipsa! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Soluta quos est
+                    incidunt tempora minima ipsa!
+                  </p>
+                  <a
+                    class="d-inline-flex align-items-center gap-2"
+                    href="#"
+                    target="_blank"
+                    >Ver más<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card-proyectos">
+                <div>
+                  <img
+                    class="w-100 object-fit-cover"
+                    height="300"
+                    src="imagenes/proyecto/spa.jpeg"
+                    alt="Foto de un proyecto de SPA" />
+                </div>
+                <div class="back p-4">
+                  <h5 class="subtitulo">Project Title</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta quos est incidunt tempora minima ipsa! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Soluta quos est
+                    incidunt tempora minima ipsa!
+                  </p>
+                  <a
+                    class="d-inline-flex align-items-center gap-2"
+                    href="#"
+                    target="_blank"
+                    >Ver más<i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Civil Engineer -->
+    <div id="civil-engineer" class="padding-especial">
+      <div class="container-xl">
+        <h1 class="titulo-principal">
+          Civil <span class="accent">Engineer</span>
+        </h1>
+        <div class="row gy-4 my-5">
+          <div class="col-sm-6 col-lg-2">
+            <div id="experiencia" class="text-center text-lg-start">
+              <h1>
+                <span class="accent">3+</span>
+              </h1>
+              <h5 class="subtitulo">
+                Years of <span class="accent">Experience</span> Working
+              </h5>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="mb-3 card-civil-engineer bg-rosa p-4">
+              <h5 class="subtitulo">STAAD.Pro</h5>
+              <p class="mb-0">
+                A powerful and versatile software tool for structural analysis
+                and design, empowering engineers to create safe and efficient
+                structures in various industries.
+              </p>
+            </div>
+            <div class="bg-salmon card-civil-engineer p-4">
+              <h5 class="subtitulo">AutoCAD</h5>
+              <p class="mb-0">
+                Providing an efficient design and documentation tool for
+                professionals in various fields. It enables the creation,
+                editing, and visualization of accurate 2D and 3D drawings and
+                models, facilitating collaboration and file sharing in the
+                design process.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-civil-engineer p-4 h-100">
+              <div class="position-relative z-1">
+                <h5 class="subtitulo">3D Modeler</h5>
+                <div>
+                  <p class="mb-4">
+                    Professional specialized in using the STAAD.Pro software to
+                    create three-dimensional digital models of structures and
+                    perform structural analysis. My expertise and skills are
+                    crucial for the accurate design and evaluation of structures
+                    in the field of civil engineering.
+                  </p>
+                  <h5 class="subtitulo">Civil engineer-draftsman</h5>
+                  <p class="mb-3">
+                    Professional who combines civil engineering knowledge with
+                    technical drawing skills to create detailed plans and
+                    designs for civil engineering projects.
+                  </p>
+                </div>
+                <div>
+                  <a
+                    class="border-bottom"
+                    href="mailto:orlandoappolon1@gmail.com?Subject=Interesado a mi perfil favor de contactarme."
+                    >orlandoappolon1@gmail.com</a
+                  >
+                  <div class="d-flex gap-3 mt-1">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/orlando-appolon-863799151">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/orlando.apollon.7?mibextid=LQQJ4d">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://instagram.com/dorckyjjda?igshid=OGQ5ZDc2ODk2ZA==">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://wa.me/522381733282?">
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <svg
+                width="414"
+                height="296"
+                viewBox="0 0 414 296"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M96.5216 147.503C90.4544 112.542 145.915 100.742 163.08 69.6868C180.293 38.5446 162.722 -10.8287 193.705 -28.3254C225.328 -46.1829 265.411 -24.9923 295.958 -5.35123C324.417 12.9475 345.075 41.0729 352.851 74.0021C360.273 105.436 352.091 137.532 336.357 165.738C320.673 193.856 298.726 221.57 267.118 227.696C237.014 233.531 212.597 208.152 184.846 195.106C153.38 180.315 102.466 181.76 96.5216 147.503Z"
+                  fill="#EDF7FA"
+                  fill-opacity="0.05" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M50.2274 145.594C42.6378 101.859 112.016 87.0987 133.488 48.2504C155.021 9.29362 133.04 -52.469 171.798 -74.3562C211.356 -96.6948 261.498 -70.1868 299.71 -45.6173C335.31 -22.7268 361.152 12.4561 370.879 53.6482C380.164 92.9701 369.929 133.12 350.247 168.404C330.626 203.578 303.173 238.245 263.633 245.909C225.975 253.209 195.43 221.46 160.715 205.142C121.354 186.639 57.6641 188.446 50.2274 145.594Z"
+                  fill="#EDF7FA"
+                  fill-opacity="0.05" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Contact -->
+    <section id="contact" class="py-5">
+      <div class="container-xl py-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div id="card-contacto-contenedor" class="p-3">
+              <div class="card-contacto p-4 p-md-5">
+                <h1 class="titulo-principal">
+                  Let's build something <span class="accent">together</span> and
+                  <span class="accent">better</span>
+                </h1>
+                <p class="fs-5">
+                  My web development expertise spans a wide range of
+                  technologies and languages, including HTML5, CSS3, JavaScript,
+                  and frameworks like React. I am constantly updating my skills
+                  and learning new tools and techniques to stay up-to-date with
+                  the latest trends in web development.
+                </p>
+                <p class="fs-5">
+                  Take a look at my portfolio to get an idea of my work and
+                  skills. If you are looking for a reliable and dedicated web
+                  developer, I look forward to the opportunity to work with you.
+                </p>
+                <hr class="my-4" />
+                <div class="row gy-2">
+                  <div class="col-sm-6">
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/orlando-appolon-863799151">
+                      <i class="fa-brands fa-linkedin"></i><span>Linkedin</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a
+                      target="_blank"
+                      href="https://twitter.com/dorcky91?s=11&t=PyoD0U2__tUboIVlaGs3AA">
+                      <i class="fa-brands fa-twitter"></i><span>Twitter</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a target="_blank" href="https://wa.me/522381733282?">
+                      <i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-6">
+                    <a
+                      target="_blank"
+                      href="https://instagram.com/dorckyjjda?igshid=OGQ5ZDc2ODk2ZA==">
+                      <i class="fa-brands fa-instagram"></i
+                      ><span>Instagram</span>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <a
+                      target="_blank"
+                      href="https://goo.gl/maps/eUXTC6i5M6c8Mkqj8">
+                      <i class="fa-solid fa-location-dot"></i
+                      ><span>Coyoacán, Mexico city, Mexico</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container-xl">
+        <ul class="d-flex justify-content-center small gap-3">
+          <li>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="small mb-0">
+            All Rights Reserved &copy 2023 - Portfolio Orlando Appolon
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
