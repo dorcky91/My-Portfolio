@@ -190,6 +190,7 @@ body.noche #home-img {
   border: 12px solid #fff;
   box-shadow: var(--shadow);
   margin-left: -100px;
+  overflow: hidden;
 }
 
 body.noche #home-descripcion {
@@ -212,6 +213,7 @@ Seccion Skills
   border: 4px solid rgb(var(--color-primario));
   border-radius: 10px;
   height: 100%;
+  overflow: hidden;
 }
 
 .card-skills.active {
