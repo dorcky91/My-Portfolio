@@ -608,7 +608,7 @@ Media Query
     bottom: 0;
     right: -210px;
     width: 210px;
-    height: 100vh;
+    height: 99vh;
     /* height: calc(100vh - 87px); */
     padding: 55px 30px;
     background-color: rgb(var(--color-secundario));
