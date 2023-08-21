@@ -274,7 +274,7 @@ body.noche #about img {
 
 #imagen-about {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -678,9 +678,21 @@ Media Query
     top: 0;
     left: 0;
     opacity: 0.1;
-    font-size: 8.5rem;
+    font-size: 7.5rem;
     transform: rotate(-60deg);
     font-family: "DM Serif Display", serif;
+  }
+
+  @keyframes animation-foto-about {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
   }
 
   #imagen-about::before {
@@ -688,9 +700,9 @@ Media Query
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    height: 103%;
-    width: 90%;
+    transform: translate(-50%, -50%);
+    height: 105%;
+    width: 100%;
     border-radius: 10px;
     background-color: rgb(var(--color-secundario));
     z-index: -100;
@@ -712,13 +724,29 @@ Media Query
     margin-top: -350px;
   }
 
+  #about img {
+    height: 900px;
+  }
+
+  @keyframes animation-foto-about {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+
   #imagen-about::before {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    height: 104%;
+    transform: translate(-50%, -50%);
+    height: 105%;
     width: 90%;
     border-radius: 10px;
     background-color: rgb(var(--color-secundario));
