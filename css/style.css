@@ -683,6 +683,10 @@ Media Query
     font-family: "DM Serif Display", serif;
   }
 
+  #about img {
+    height: 600px;
+  }
+
   @keyframes animation-foto-about {
     0% {
       transform: translate(-50%, -50%) rotate(0deg);
@@ -725,7 +729,7 @@ Media Query
   }
 
   #about img {
-    height: 900px;
+    height: 800px;
   }
 
   @keyframes animation-foto-about {
